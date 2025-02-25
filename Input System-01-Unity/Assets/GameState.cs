@@ -18,6 +18,7 @@ public enum GameState
     Gameplay,
     Paused,
     GameOver,
+    Playing,
     Victory
     
     

@@ -14,83 +14,63 @@
 
 //namespace CSG.General 
 
+using System.Collections;
+using System.Collections.Generic;
+using CSG.General;
+using UnityEngine;
 
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
+public class GameManager : Singleton<GameManager>
+{
+    public GameState CurrentState;
     
     
-    public class GameManager : Singleton<GameManager>
+    // Start is called before the first frame update
+    void Start()
     {
+        CurrentState = GameState.MainMenu;
+    }//end Start()
 
-        public GameState currentState; 
-        // Start is called before the first frame update
-        void Start()
+    // Update is called once per frame
+    void Update()
+    {
+#if UNITY_EDITOR
+        ManageGameState();
+
+        if (Input.GetKey(KeyCode.Escape))
         {
-            currentState = GameState.MainMenu;
-        }//end Start()
-    
-        // Update is called once per frame
-        void Update()
-        {
-            #if UNITY_EDITOR
-            ManageGameState();
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                QuitGame();
-            }
-            #endif
-
-        }//end Update()
-
-        void QuitGame()
-        {
-            Application.Quit();
-            
-            #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-            #else
-            Application.Quit();
-            #endif
+            QuitGame();
         }
+#endif
+        
+    }//end Update()
 
-        void ManageGameState()
-        {
-            switch (currentState)
-            {
-                case GameState.MainMenu:
-                    Debug.Log("MainMenu");
-                    break;
-                
-                case GameState.Gameplay:
-                    Debug.Log("Gameplay");
-                    break;
-                
-                case GameState.Paused:
-                    Debug.Log("Paused");
-                    break;
-                
-                case GameState.GameOver:
-                    Debug.Log("GameOver");
-                    break;
-                
-                case GameState.Victory:
-                    Debug.Log("Victory");
-                    break;
-            }//emd switch
-        }//end managegamestate
-
-
-        public void ChangeState(GameState newState)
-        {
-            
-        }
-        
-        
-        
-        
-        
-        
-        
+    void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
+
+    void ManageGameState()
+    {
+        switch (CurrentState)
+        {
+            case GameState.MainMenu:
+                //Debug.Log("Main Menu");
+                break;
+            case GameState.Playing:
+                break;
+            case GameState.Paused:
+                break;
+            case GameState.GameOver:
+                break;
+        }
+    }
+
+    public void ChangeState(GameState newState)
+    {
+        CurrentState = newState;
+    }
+}
