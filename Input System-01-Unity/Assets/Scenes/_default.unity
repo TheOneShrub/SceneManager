@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 15
 --- !u!4 &157854709
 Transform:
   m_ObjectHideFlags: 2
@@ -457,7 +456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 8
 --- !u!4 &546846556
 Transform:
   m_ObjectHideFlags: 2
@@ -551,7 +549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 3
 --- !u!4 &868533816
 Transform:
   m_ObjectHideFlags: 2
@@ -567,6 +564,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1244911038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 329216389002659392, guid: f99d58c630ed939488fec9ac0fa50f05, type: 3}
+  m_PrefabInstance: {fileID: 7186828507530383850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1371988490
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,10 +595,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371988490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b78f5bda75d5e24da3f5fa41efcb984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 18
+  mainMenu: MainMenu
+  pauseMenu: PauseMenu
+  gameOver: GameOver
+  GameLevels: []
+  gameLevelToLoad: 
+  gameLevelIndex: -1
 --- !u!4 &1371988492
 Transform:
   m_ObjectHideFlags: 2
@@ -643,7 +650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 14
 --- !u!4 &1442101298
 Transform:
   m_ObjectHideFlags: 2
@@ -689,7 +695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 9
 --- !u!4 &1628330030
 Transform:
   m_ObjectHideFlags: 2
@@ -711,6 +716,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5112983065006055095, guid: f99d58c630ed939488fec9ac0fa50f05, type: 3}
   m_PrefabInstance: {fileID: 7186828507530383850}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142342365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244911038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b78f5bda75d5e24da3f5fa41efcb984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: MainMenu
+  pauseMenu: PauseMenu
+  gameOver: GameOver
+  GameLevels:
+  - Campgrounds
+  gameLevelToLoad: null
+  gameLevelIndex: -1
 --- !u!1001 &4734735540638856644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -763,6 +787,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8228366388928838661, guid: 82673356ec40f424db4f9bade522c4f4, type: 3}
+      propertyPath: CurrentState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228366388928838661, guid: 82673356ec40f424db4f9bade522c4f4, type: 3}
+      propertyPath: SceneManager
+      value: 
+      objectReference: {fileID: 2142342365}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -820,10 +852,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 881455743567955733, guid: f99d58c630ed939488fec9ac0fa50f05, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 329216389002659392, guid: f99d58c630ed939488fec9ac0fa50f05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2142342365}
   m_SourcePrefab: {fileID: 100100000, guid: f99d58c630ed939488fec9ac0fa50f05, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

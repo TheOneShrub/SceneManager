@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 8
 --- !u!4 &546846556
 Transform:
   m_ObjectHideFlags: 2
@@ -242,7 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 3
 --- !u!4 &868533816
 Transform:
   m_ObjectHideFlags: 2
@@ -284,10 +282,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371988490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b78f5bda75d5e24da3f5fa41efcb984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 10
+  mainMenu: MainMenu
+  pauseMenu: PauseMenu
+  gameOver: GameOver
+  GameLevels: []
+  gameLevelToLoad: 
+  gameLevelIndex: -1
 --- !u!4 &1371988492
 Transform:
   m_ObjectHideFlags: 2
@@ -333,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 14
 --- !u!4 &1442101298
 Transform:
   m_ObjectHideFlags: 2

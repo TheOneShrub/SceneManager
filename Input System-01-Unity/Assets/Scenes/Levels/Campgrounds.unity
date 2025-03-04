@@ -214,7 +214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 15
 --- !u!4 &174208001
 Transform:
   m_ObjectHideFlags: 2
@@ -270,7 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 8
 --- !u!4 &329240224
 Transform:
   m_ObjectHideFlags: 2
@@ -385,7 +383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 14
 --- !u!4 &394806166
 Transform:
   m_ObjectHideFlags: 2
@@ -552,7 +549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 0
 --- !u!1 &794617795
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 3
 --- !u!4 &794617797
 Transform:
   m_ObjectHideFlags: 2
@@ -699,7 +694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 0
 --- !u!4 &885587807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7290982900638730717, guid: dcb12c848034d254a96aff519c1c6759, type: 3}
@@ -912,7 +906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 9
 --- !u!4 &1029466451
 Transform:
   m_ObjectHideFlags: 2
@@ -1186,10 +1179,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596114252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 149818d5acbed4455af27721dc46461a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b78f5bda75d5e24da3f5fa41efcb984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorIndex: 18
+  mainMenu: MainMenu
+  pauseMenu: PauseMenu
+  gameOver: GameOver
+  GameLevels:
+  - Campgrounds
+  gameLevelToLoad: 0
+  gameLevelIndex: -1
 --- !u!4 &1596114254
 Transform:
   m_ObjectHideFlags: 2
