@@ -1,25 +1,24 @@
 /*******************************************************************
-* COPYRIGHT       : Year
-* PROJECT         : Name of Project or Assignment script is used for.
-* FILE NAME       : #SCRIPTNAME#.cs
-* DESCRIPTION     : Short Description of script.
-*
+* COPYRIGHT       : 2025
+* PROJECT         : CSG Managers
+* FILE NAME       : GameState.cs
+* DESCRIPTION     : The game state options
+*                    
 * REVISION HISTORY:
 * Date            Author                  Comments
 * ---------------------------------------------------------------------------
-* 2000/01/01      Developer's Name        Created <short comment of changes>
-*
+* 2025/02/04     Akram Taghavi-Burris        Created class
+* 2025/02/10    ""                           Added Restart state
 *
 /******************************************************************/
 
 public enum GameState
 {
+    Idle,
     MainMenu,
-    Gameplay,
-    Paused,
-    GameOver,
     Playing,
-    Victory
-    
-    
+    Paused,
+    Restart,
+    GameOver,
+    QuitGame
 }

@@ -15,7 +15,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using CSG.Managers;
+using CSG.Managers;
 using UnityEngine;
 
 public class Campgrounds : MonoBehaviour
