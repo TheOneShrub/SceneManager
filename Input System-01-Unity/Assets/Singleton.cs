@@ -47,7 +47,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         if (_instance == null)
         {
             _instance = this as T;
-            DontDestroyOnLoad(_instance);
+            //DontDestroyOnLoad(_instance);
         }
         else if (_instance != this)
         {
